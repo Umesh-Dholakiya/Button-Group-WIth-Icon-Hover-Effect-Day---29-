@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #222;
+  margin: 0;
+}
+
+.button-group {
+  display: flex;
+  background-color: #333;
+  border-radius: 50px;
+  padding: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  margin: 0 5px;
+  background-color: #333;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  color: #888;
+}
+
+.button.active {
+  background-color: #111;
+  color: #f00;
+  box-shadow: 0 0 10px rgba(255,0,0,0.5);
+}
+
+.button:hover {
+  background-color: #111;
+  color: #fff;
+}
+
+.button i {
+  font-size: 20px;
+}
+
+.button-group .button:hover:not(.active) {
+  box-shadow: 0 0 10px rgba (255,255,255,0.2);
+}
